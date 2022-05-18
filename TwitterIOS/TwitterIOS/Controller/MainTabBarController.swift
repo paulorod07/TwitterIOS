@@ -11,13 +11,15 @@ class MainTabBarController: UITabBarController {
     
     // MARK: - Properties
     
+    var backgroundColor: UIColor = .white
+    
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupViewControllers()
-        tabBar.backgroundColor = .systemGray
+        tabBar.backgroundColor = backgroundColor
     }
     
     // MARK: - Helpers
@@ -52,7 +54,7 @@ class MainTabBarController: UITabBarController {
         navigationController.tabBarItem.image = image
         
         let navigationBarAppearance = UINavigationBarAppearance()
-        navigationBarAppearance.backgroundColor = .systemGray
+        navigationBarAppearance.backgroundColor = backgroundColor
         
         navigationController.navigationBar.standardAppearance = navigationBarAppearance
         navigationController.navigationBar.scrollEdgeAppearance = navigationBarAppearance
