@@ -8,11 +8,32 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
+    
+    // MARK: - Properties
+    
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .blue
+        setupViewControllers()
+        tabBar.backgroundColor = .systemPink
+    }
+    
+    // MARK: - Helpers
+    
+    func setupViewControllers() {
+        let feedViewController = FeedViewController()
+        let exploreViewController = ExploreViewController()
+        let notificationsViewController = NotificationsViewController()
+        let conversationsViewController = ConversationsViewController()
+        
+        viewControllers = [
+            feedViewController,
+            exploreViewController,
+            notificationsViewController,
+            conversationsViewController
+        ]
     }
 
 }
