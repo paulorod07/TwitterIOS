@@ -11,7 +11,17 @@ class MainTabBarController: UITabBarController {
     
     // MARK: - Properties
     
-    var backgroundColor: UIColor = .white
+    private var actionButtonPadding: CGFloat = 56
+    
+    lazy var actionButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .blue
+        button.tintColor = .white
+        button.setImage(UIImage(named: "new_tweet"), for: .normal)
+        button.layer.cornerRadius = actionButtonPadding / 2
+        return button
+    }()
     
     // MARK: - Lifecycle
 
@@ -19,10 +29,24 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
 
         setupViewControllers()
-        tabBar.backgroundColor = backgroundColor
+        setupUI()
     }
     
     // MARK: - Helpers
+    
+    private func setupUI() {
+        view.addSubview(actionButton)
+        setupActionButtonConstraints()
+    }
+    
+    private func setupActionButtonConstraints() {
+        NSLayoutConstraint.activate([
+            actionButton.heightAnchor.constraint(equalToConstant: actionButtonPadding),
+            actionButton.widthAnchor.constraint(equalToConstant: actionButtonPadding),
+            actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -64),
+            actionButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16)
+        ])
+    }
     
     func setupViewControllers() {
         let feedViewController = FeedViewController()
@@ -54,7 +78,7 @@ class MainTabBarController: UITabBarController {
         navigationController.tabBarItem.image = image
         
         let navigationBarAppearance = UINavigationBarAppearance()
-        navigationBarAppearance.backgroundColor = backgroundColor
+        navigationBarAppearance.backgroundColor = .white
         
         navigationController.navigationBar.standardAppearance = navigationBarAppearance
         navigationController.navigationBar.scrollEdgeAppearance = navigationBarAppearance
