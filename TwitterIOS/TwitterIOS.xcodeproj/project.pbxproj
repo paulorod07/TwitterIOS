@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3ACB6ED428354D9B0087C979 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6ED328354D9B0087C979 /* MainTabBarController.swift */; };
+		3ACB6ED6283550560087C979 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6ED5283550560087C979 /* FeedViewController.swift */; };
+		3ACB6ED8283550D90087C979 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6ED7283550D90087C979 /* ExploreViewController.swift */; };
+		3ACB6EDA283551110087C979 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6ED9283551110087C979 /* NotificationsViewController.swift */; };
+		3ACB6EDC283551430087C979 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6EDB283551430087C979 /* ConversationsViewController.swift */; };
+		3ACB6EDF2835D34F0087C979 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6EDE2835D34F0087C979 /* Extension+UIView.swift */; };
+		3ACB6EE12835D35D0087C979 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6EE02835D35D0087C979 /* Extension+UIColor.swift */; };
 		3AFD98AF283539F60059C4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD98AE283539F60059C4FB /* AppDelegate.swift */; };
 		3AFD98B1283539F60059C4FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD98B0283539F60059C4FB /* SceneDelegate.swift */; };
 		3AFD98B6283539F60059C4FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFD98B4283539F60059C4FB /* Main.storyboard */; };
@@ -17,6 +23,12 @@
 
 /* Begin PBXFileReference section */
 		3ACB6ED328354D9B0087C979 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		3ACB6ED5283550560087C979 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		3ACB6ED7283550D90087C979 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		3ACB6ED9283551110087C979 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		3ACB6EDB283551430087C979 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		3ACB6EDE2835D34F0087C979 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		3ACB6EE02835D35D0087C979 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		3AFD98AB283539F60059C4FB /* TwitterIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFD98AE283539F60059C4FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AFD98B0283539F60059C4FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				3ACB6ED328354D9B0087C979 /* MainTabBarController.swift */,
+				3ACB6ED5283550560087C979 /* FeedViewController.swift */,
+				3ACB6ED7283550D90087C979 /* ExploreViewController.swift */,
+				3ACB6ED9283551110087C979 /* NotificationsViewController.swift */,
+				3ACB6EDB283551430087C979 /* ConversationsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -80,6 +96,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3ACB6EDD2835D3310087C979 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB6EDE2835D34F0087C979 /* Extension+UIView.swift */,
+				3ACB6EE02835D35D0087C979 /* Extension+UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3AFD98A2283539F60059C4FB = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +124,7 @@
 		3AFD98AD283539F60059C4FB /* TwitterIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3ACB6EDD2835D3310087C979 /* Extensions */,
 				3ACB6ED228353F8F0087C979 /* Model */,
 				3ACB6ED128353F860087C979 /* View */,
 				3ACB6ED028353F820087C979 /* ViewModel */,
@@ -188,7 +214,13 @@
 			files = (
 				3AFD98AF283539F60059C4FB /* AppDelegate.swift in Sources */,
 				3AFD98B1283539F60059C4FB /* SceneDelegate.swift in Sources */,
+				3ACB6EE12835D35D0087C979 /* Extension+UIColor.swift in Sources */,
+				3ACB6EDF2835D34F0087C979 /* Extension+UIView.swift in Sources */,
+				3ACB6EDC283551430087C979 /* ConversationsViewController.swift in Sources */,
+				3ACB6ED8283550D90087C979 /* ExploreViewController.swift in Sources */,
+				3ACB6EDA283551110087C979 /* NotificationsViewController.swift in Sources */,
 				3ACB6ED428354D9B0087C979 /* MainTabBarController.swift in Sources */,
+				3ACB6ED6283550560087C979 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
