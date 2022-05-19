@@ -16,10 +16,11 @@ class MainTabBarController: UITabBarController {
     lazy var actionButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .blue
+        button.backgroundColor = .twitterBlue
         button.tintColor = .white
         button.setImage(UIImage(named: "new_tweet"), for: .normal)
         button.layer.cornerRadius = actionButtonPadding / 2
+        button.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -30,6 +31,10 @@ class MainTabBarController: UITabBarController {
 
         setupViewControllers()
         setupUI()
+    }
+    
+    @objc func actionButtonTapped() {
+        print("printed")
     }
     
     // MARK: - Helpers
