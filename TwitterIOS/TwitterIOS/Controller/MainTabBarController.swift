@@ -33,6 +33,8 @@ class MainTabBarController: UITabBarController {
         setupUI()
     }
     
+    // MARK: - Selectors
+    
     @objc func actionButtonTapped() {
         print("printed")
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A98221A2838204D007A0532 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9822192838204D007A0532 /* SignInViewController.swift */; };
+		3A98221C283820EC007A0532 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A98221B283820EB007A0532 /* SignUpViewController.swift */; };
 		3ACB6ED428354D9B0087C979 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6ED328354D9B0087C979 /* MainTabBarController.swift */; };
 		3ACB6ED6283550560087C979 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6ED5283550560087C979 /* FeedViewController.swift */; };
 		3ACB6ED8283550D90087C979 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB6ED7283550D90087C979 /* ExploreViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A9822192838204D007A0532 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3A98221B283820EB007A0532 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3ACB6ED328354D9B0087C979 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3ACB6ED5283550560087C979 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		3ACB6ED7283550D90087C979 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A9822182838200D007A0532 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3A9822192838204D007A0532 /* SignInViewController.swift */,
+				3A98221B283820EB007A0532 /* SignUpViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		3ACB6ECD28353F6C0087C979 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +79,7 @@
 		3ACB6ECF28353F800087C979 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3A9822182838200D007A0532 /* Authentication */,
 				3ACB6ED328354D9B0087C979 /* MainTabBarController.swift */,
 				3ACB6ED5283550560087C979 /* FeedViewController.swift */,
 				3ACB6ED7283550D90087C979 /* ExploreViewController.swift */,
@@ -212,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A98221C283820EC007A0532 /* SignUpViewController.swift in Sources */,
 				3AFD98AF283539F60059C4FB /* AppDelegate.swift in Sources */,
 				3AFD98B1283539F60059C4FB /* SceneDelegate.swift in Sources */,
 				3ACB6EE12835D35D0087C979 /* Extension+UIColor.swift in Sources */,
@@ -220,6 +235,7 @@
 				3ACB6ED8283550D90087C979 /* ExploreViewController.swift in Sources */,
 				3ACB6EDA283551110087C979 /* NotificationsViewController.swift in Sources */,
 				3ACB6ED428354D9B0087C979 /* MainTabBarController.swift in Sources */,
+				3A98221A2838204D007A0532 /* SignInViewController.swift in Sources */,
 				3ACB6ED6283550560087C979 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
