@@ -20,6 +20,30 @@ class SignInViewController: UIViewController {
         return view
     }()
     
+    private lazy var stackView: UIStackView = {
+        let view = UIStackView(arrangedSubviews: [emailContainerView, passwordContainerView])
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.axis = .vertical
+        view.spacing = 8
+        return view
+    }()
+    
+    private lazy var emailContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .red
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        return view
+    }()
+    
+    private lazy var passwordContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .blue
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        return view
+    }()
+    
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
@@ -40,6 +64,13 @@ class SignInViewController: UIViewController {
         let logoImageViewDimensions: CGFloat = 150
         logoImageView.setDimensions(width: logoImageViewDimensions,
                                     height: logoImageViewDimensions)
+        
+        view.addSubview(stackView)
+        setupStackViewConstraints()
+    }
+    
+    private func setupStackViewConstraints() {
+        stackView.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor)
     }
     
     private func setupLogoImageViewConstraints() {
